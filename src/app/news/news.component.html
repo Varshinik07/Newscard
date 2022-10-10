@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row g-3">
+        <div *ngFor="let i of newsdata.articles" class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="card" >
+                <img src="{{i.urlToImage}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{i.title}}</h5>
+                  <p class="card-text">{{i.author}}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                
+              
+        </div>
+     </div>
+     </div>
+   </div>
+</div>
+
