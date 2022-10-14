@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NewsComponent } from './news/news.component';
 import{RouterModule,Routes} from '@angular/router';
-
+import{HttpClientModule} from '@angular/common/http';
 const appRoutes:Routes=[
   {
     path:"",component:NewsComponent
@@ -21,7 +21,8 @@ const appRoutes:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
